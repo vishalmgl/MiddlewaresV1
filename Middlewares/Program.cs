@@ -17,6 +17,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//app.UseMiddleware<MaintenanceMiddleware>();
 app.UseMiddleware<MyCustomMiddleware>();
 
 app.UseHttpsRedirection();
